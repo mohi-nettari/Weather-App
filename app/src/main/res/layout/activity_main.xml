@@ -24,10 +24,10 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:cardElevation="5dp"
-                app:cardCornerRadius="10dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="15dp"
                 app:cardBackgroundColor="@color/background">
 
                 <LinearLayout
@@ -45,6 +45,7 @@
                         android:drawablePadding="10dp"
                         android:drawableStart="@drawable/ic_baseline_search_24"
                         android:id="@+id/citynamesearch"
+                        android:fontFamily="@font/robotoblack"
                         android:textColor="@color/black"
 
                         />
@@ -72,8 +73,8 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardElevation="5dp"
-                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="15dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 app:cardBackgroundColor="@color/background">
@@ -83,24 +84,26 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="5dp">
+
                     <TextView
                         android:id="@+id/city"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="CityName"
-                        android:textColor="@color/subfont"
-                        android:textSize="25sp"
-                        android:textStyle="bold"
+                        android:fontFamily="@font/robotoblack"
                         android:padding="10dp"
-                        />
+                        android:text="CityName"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
                     <TextView
                         android:id="@+id/coordinates"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="lattitude , longitude"
                         android:layout_marginLeft="10dp"
-                        android:textColor="@color/black"
-                        />
+                        android:fontFamily="@font/robotolight"
+                        android:text="lattitude , longitude"
+                        android:textColor="@color/black" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -131,7 +134,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         app:cardBackgroundColor="@color/background"
-                        app:cardElevation="5dp"
+                        app:cardElevation="20dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"                      app:cardCornerRadius="10dp">
                         <TextView
@@ -141,15 +144,16 @@
                             android:text="weather"
                             android:textSize="20sp"
                             android:textStyle="bold"
-                            android:textColor="@color/subfont"
+                            android:fontFamily="@font/robotoblack"
+                            android:textColor="@color/black"
                             android:padding="20dp"/>
                     </com.google.android.material.card.MaterialCardView>
                     <com.google.android.material.card.MaterialCardView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         app:cardBackgroundColor="@color/background"
-                        app:cardElevation="5dp"
-                        app:cardCornerRadius="10dp"
+                        app:cardElevation="20dp"
+                        app:cardCornerRadius="15dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"                       android:layout_marginLeft="10dp">
                         <LinearLayout
@@ -162,8 +166,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="temp"
-                                android:textColor="@color/subfont"
-                                android:textSize="20sp"
+                                android:fontFamily="@font/robotoblack"
+                                android:textColor="@color/black"                                android:textSize="20sp"
                                 android:padding="7dp"
                                 android:textStyle="bold"/>
                             <LinearLayout
@@ -177,6 +181,7 @@
                                     android:text="min: temp"
                                     android:padding="5dp"
                                     android:textSize="16sp"
+                                    android:fontFamily="@font/robotolight"
                                     android:textColor="@color/black"/>
                                 <TextView
                                     android:id="@+id/max_temp"
@@ -185,7 +190,9 @@
                                     android:text="max: temp"
                                     android:padding="5dp"
                                     android:textSize="16sp"
-                                    android:textColor="@color/black"/>
+                                    android:fontFamily="@font/robotolight"
+                                    android:textColor="@color/black"
+                                    />
                             </LinearLayout>
                         </LinearLayout>
                     </com.google.android.material.card.MaterialCardView>
@@ -219,10 +226,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:cardBackgroundColor="@color/background"
-                        app:cardElevation="5dp"
+                        app:cardElevation="20dp"
+                        app:cardCornerRadius="15dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        app:cardCornerRadius="10dp">
+                >
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -235,15 +243,17 @@
                                 android:text="1000"
                                 android:paddingRight="100dp"
                                 android:textStyle="bold"
-                                android:textColor="@color/subfont"
-                                android:textSize="20sp"/>
+                                android:fontFamily="@font/robotoblack"
+                                android:textColor="@color/black"
+                                />                                android:textSize="20sp"/>
                             <TextView
-
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Pressure"
                                 android:textColor="@color/black"
-                                android:textSize="16sp"/>
+                                android:fontFamily="@font/robotolight"
+                                android:textSize="16sp"
+                                />
                         </LinearLayout>
                     </com.google.android.material.card.MaterialCardView>
 
@@ -251,8 +261,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:cardBackgroundColor="@color/background"
-                        app:cardElevation="5dp"
-                        app:cardCornerRadius="10dp"
+                        app:cardElevation="20dp"
+                        app:cardCornerRadius="15dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"                        android:layout_marginLeft="10dp">
                         <LinearLayout
@@ -266,8 +276,8 @@
                                 android:layout_height="wrap_content"
                                 android:text="24"
                                 android:textSize="20sp"
-                                android:textColor="@color/subfont"
-                                android:textStyle="bold"
+                                android:fontFamily="@font/robotoblack"
+                                android:textColor="@color/black"                                android:textStyle="bold"
 
                                 />
                             <TextView
@@ -275,6 +285,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Humidity"
                                 android:textSize="16sp"
+                                android:fontFamily="@font/robotolight"
                                 android:textColor="@color/black"
 
                                 />
@@ -305,7 +316,7 @@
                 android:layout_height="wrap_content"
                 app:cardBackgroundColor="@color/background"
                 android:layout_marginTop="10dp"
-                app:cardElevation="5dp"
+                app:cardElevation="20dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"                app:cardCornerRadius="10dp">
                 <LinearLayout
@@ -318,8 +329,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
-                        android:textColor="@color/subfont"
-                        android:text="Speed"
+                        android:fontFamily="@font/robotoblack"
+                        android:textColor="@color/black"                        android:text="Speed"
                         android:textSize="25sp"
                         android:padding="5dp"
                         />
@@ -330,6 +341,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
+                            android:fontFamily="@font/robotolight"
                             android:layout_marginLeft="10dp"
                             android:text="Wind Speed"/>
                         <TextView
@@ -338,6 +350,7 @@
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
                             android:layout_marginLeft="20dp"
+                            android:fontFamily="@font/robotolight"
                             android:textStyle="bold"
                             android:text="Degree : -"/>
                         <!--                        <TextView-->
